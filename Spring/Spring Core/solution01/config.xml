@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+     
+     <bean class="com.solution01.Address" name="Address">
+
+  <property name="street">
+   <value>Lane99</value>
+   </property>
+  
+  <property name="city" >
+  <value>Ranchi</value>
+  </property>
+  
+  <property name="state">
+  <value>Jharkhand</value>
+  </property>
+  
+  <property name="zip">
+  <value>834001</value>
+  </property>
+  
+  <property name="country">
+  <value>India</value>
+  </property> 
+</bean>
+            
+<bean class="com.solution01.Customer" name="customer">
+
+  <property name="customerId">
+  <value>298364</value>
+  </property>
+  
+  <property name="customerName">
+  <value>Ashish</value>
+  </property>
+  
+  <property name="customerContact">
+  <value>39754</value>
+  </property>
+  
+  <property name="customerAddress" ref="Address" />
+</bean>
+
+
+</beans>
