@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        function check(year) {
+            if(year%4 == 0 || (year%100 == 0 && year%400 == 0)) {
+                document.write(year + "  ");
+            }
+        }    
+        
+
+        var year = 2020;
+        for(var i=0 ; i<=20 ; i++) {
+            year++;
+            check(year);            
+        }
+    </script>
+</body>
+</html>

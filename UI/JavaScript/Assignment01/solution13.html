@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>    
+
+        function forLoop() {
+            var sum1 = 0;
+            for(i=0 ; i<arr.length ; i++) {
+                sum1 += arr[i];
+            }
+
+            document.write("using for-loop: " + sum1 + "<br>");
+        }
+        
+
+
+        function whileLoop() {
+            var sum2 = 0;
+            var j = 0
+            while(j<arr.length) {
+                sum2 += arr[j];
+                j++;
+            }
+
+            document.write("using while-loop: " + sum2 + "<br>");
+        }
+        
+
+        function doWhileLoop() {
+            var sum3 = 0;
+            var k = 0;
+            do {
+                sum3 += arr[k];
+                k++;
+            }
+            while(k<arr.length);
+
+            document.write("using do-while-loop: " + sum3 + "<br>");
+        }
+        
+        
+        var arr = [1,2,3];
+        forLoop();
+        whileLoop();
+        doWhileLoop();
+
+    </script>
+</body>
+</html>

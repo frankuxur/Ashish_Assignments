@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        var dollar = parseFloat(prompt("Enter money in $: "));
+        var foo = parseInt(prompt("Enter number next to the currency you wanna convert to: 1--INR, 2--Japanese Yen, 3--Euro, 4--Pound Sterling"));
+
+        switch(foo) {
+            case 1:
+                alert("INR: " + 74.28*dollar);
+                break;
+            case 2:
+                alert("Yen: " + 109.14*dollar);
+                break;
+            case 3:
+                alert("Euro: " + 0.84*dollar);
+                break;
+            case 4:
+                alert("Pound Sterling " + 0.72*dollar);
+                break;
+            default:
+                alert("wrong choice");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        function composedValue(square, double, val) {
+            return square(double(val));
+        }
+
+        function double(x) {      
+            return x*2;
+        }
+
+        function square(x) {
+            return x*x;
+        }
+
+        var result = composedValue(square, double, 2);
+        document.write(result);
+    </script>
+</body>
+</html>

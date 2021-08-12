@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        var arr = [];
+
+        for(i=0 ; i<100 ; i++) {
+            var rand = Math.floor(Math.random() * 1000) + 1;
+            arr.push(rand);
+        }
+
+        document.write(arr + "<br>");
+
+        var max = Math.max.apply(Math, arr);
+        document.write("maximum: " + max + "<br>");
+
+        var min = Math.min.apply(Math, arr);
+        document.write("minimum: " + min + "<br>");
+
+        var even = 0;
+        var odd = 0;
+        var sum = 0;
+        arr.forEach((n) => {
+            sum += n;
+            if(n%2 == 0) {
+                even++;
+            }
+        });
+        odd = 100-even;
+        document.write("even count: " + even + "<br>" + "odd count: " + odd + "<br>" + "sum: " + sum + "<br>" + "average: " + sum/100);
+    </script>
+</body>
+</html>

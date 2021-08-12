@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        function fiboww() {
+            var n1=0, n2=1, nextTerm;
+            for(i=0 ; i<100 ; i++) {
+                document.writeln(n1 + ",   ");
+                nextTerm = n1 + n2;
+                n1 = n2;
+                n2 = nextTerm;
+            }
+        }
+
+        fiboww();
+        
+
+    </script>
+</body>
+</html>

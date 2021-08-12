@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        // function eval(str) {
+        //     var myArr = str.split(" ");
+        //     var myArr2 = [];
+            
+        //     myArr.forEach((word) => {
+        //         var counter = 0;
+        //         for(i=0 ; i<word.length ; i++) {
+        //             if(word.charAt(i) === "a" || word.charAt(i) === "b") {
+        //                 counter++;
+        //             }
+        //         }
+        //         if(counter === 0) {
+        //             myArr2.push(word);
+        //         }
+        //     });
+
+        //     // document.write(myArr2);
+
+        //     var myArr2Length = [];
+        //     myArr2.forEach((word) => {
+        //         myArr2Length.push(word.length);
+        //     });
+
+        //     // document.write(myArr2Length);
+            
+        //     var indexOfMax = myArr2Length.indexOf(Math.max.apply(Math, myArr2Length));
+
+        //     var result = myArr2[indexOfMax];
+
+        //     document.write(result);
+        // }
+
+        // var str = "it is a beautiful day and the sky is blue and the birds are flying";
+
+        // document.write(str + "<br>");
+        // eval(str);
+
+
+
+        function fun(str) {
+            var myArr = [];
+            var start = 0;
+            for(i=0 ; i<str.length ; i++) { 
+                if(str.charAt(i) === "a" || str.charAt(i) === "e") {
+                    // document.write(str.slice(start, i));
+                    myArr.push(str.slice(start, i));
+                    start = i+1;
+                }
+
+                if(i==str.length-1) {
+                        myArr.push(str.slice(start, i+1));
+                }
+                
+            }
+
+            document.write(myArr + "<br>");
+
+
+            var myArrLength = [];
+            myArr.forEach((word) => {
+                myArrLength.push(word.length);
+            });
+
+            // document.write(myArrLength);
+            
+            var indexOfMax = myArrLength.indexOf(Math.max.apply(Math, myArrLength));
+
+            var result = myArr[indexOfMax];
+
+            document.write(result);
+        }
+
+
+
+
+
+        var str = "qqqqawwwettterrrwwerrrrrrrrrrrrrrrrrrrrrrrreiwqgiciwiuaihaLJhseioeiwqhdqwhdihdckwehcdkhkwedhawdlsdfidkishdisihdhsihidhhfiodshuhsdifhu";
+        fun(str);
+        
+
+        
+        
+
+
+        
+
+    </script>
+</body>
+</html>

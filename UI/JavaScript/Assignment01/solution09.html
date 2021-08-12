@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        function alter(arrayOne, arrayTwo) {
+            var len = arrayOne.length > arrayTwo.length ? arrayOne.length : arrayTwo.length;
+            var arrayThree = [];
+            for(var i=0 ; i<len ; i++) {
+                arrayThree.push(arrayOne[i]);
+                arrayThree.push(arrayTwo[i]);
+            }
+
+            return arrayThree;
+        }
+
+
+        var arrayOne = ["a", "b", "c"];
+        var arrayTwo = [1, 2, 3];
+
+        var result = alter(arrayOne, arrayTwo);
+        document.write(result);
+
+
+
+    </script>
+</body>
+</html>
